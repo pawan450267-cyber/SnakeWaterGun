@@ -1,0 +1,34 @@
+<Game>
+
+    orientation: "vertical"
+    padding: 20
+    spacing: 15
+
+    Label:
+        text: "Snake Water Gun"
+        font_size: 32
+
+    Button:
+        text: "🐍 Snake"
+        on_press: root.play("Snake")
+
+    Button:
+        text: "💧 Water"
+        on_press: root.play("Water")
+
+    Button:
+        text: "🔫 Gun"
+        on_press: root.play("Gun")
+
+    Label:
+        text: "You : " + root.user_choice
+
+    Label:
+        text: "Computer : " + root.computer_choice
+
+    Label:
+        text: root.result
+        font_size: 26
+
+    Label:
+        text: "Score : You {} | Computer {}".format(root.user_score, root.computer_score)
